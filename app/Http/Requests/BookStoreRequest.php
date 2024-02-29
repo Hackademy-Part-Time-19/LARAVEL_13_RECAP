@@ -23,7 +23,7 @@ class BookStoreRequest extends FormRequest
     {
         return [
             'title' => 'required|max:50',
-            'description' => 'required|min:20|max:200',
+            'description' => 'required|min:4|max:200',
             'price' => 'required',
             'image' => 'image|max:4096',
         ];

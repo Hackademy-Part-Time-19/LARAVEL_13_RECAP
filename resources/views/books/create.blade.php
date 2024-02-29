@@ -22,13 +22,15 @@
                     <div class="mb-3">
                         <label for="price" class="form-label">Prezzo</label>
                         <input name="price" type="decimal" class="form-control" id="price">
-                    </div @error('price') <span class="text-danger">{{ $message }}</span>
+                    </div> @error('price') <span class="text-danger">{{ $message }}</span>
                     @enderror
 
                     <div class="mb-3">
                         <label for="description" class="form-label">Descrizione</label>
                         <input name="description" type="text" class="form-control" id="description">
                     </div>
+                    @error('description') <span class="text-danger">{{ $message }}</span>
+                    @enderror
 
                     <div class="mb-3">
                         <label for="image" class="form-label">Immagine</label>
